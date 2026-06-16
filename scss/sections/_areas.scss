@@ -1,0 +1,64 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.areas {
+  padding: 0 $padding-mobile 72px;
+  text-align: center;
+}
+
+.areas__title {
+  @include flatten;
+
+  margin-bottom: 2px;
+  font-family: $font-sans;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.areas__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 14px;
+  font-family: $font-serif;
+  font-size: 23px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+
+.areas__list li::after {
+  content: "";
+  // Lets the dot sit next to the text and not on a new line
+  display: inline-block;
+  // Sets the dot size and spacing
+  width: 5px;
+  height: 5px;
+  margin-left: 3px;
+  // Makes the dot circular and vertically aligned with the text
+  border-radius: 50%;
+  vertical-align: top;
+  transform: translateY(4px);
+}
+
+.areas__list li:nth-child(1)::after {
+  background-color: $dot-green-yellow;
+}
+
+.areas__list li:nth-child(2)::after {
+  background-color: $dot-blue;
+}
+
+.areas__list li:nth-child(3)::after {
+  background-color: $dot-orange;
+}
+
+.areas__list li:nth-child(4)::after {
+  background-color: $dot-purple;
+}
+
+.areas__list li:nth-child(5)::after {
+  background-color: $dot-green;
+}

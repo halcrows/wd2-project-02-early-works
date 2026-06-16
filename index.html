@@ -10,28 +10,67 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <!-- 01 Header will go here -->
-  </header>
+<header class="site-header">
+  <a class="site-header__logo" href="index.html" aria-label="Early Works home"></a>
 
-  <main>
-    <!-- 02 Hero will go here -->
+  <p class="site-header__name">Early Works</p>
 
-    <!-- 03 Areas of Work will go here -->
+  <a class="site-header__contact" href="#contact">Contact</a>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+  <img class="hero__illustration hero__illustration--head" src="images/hero-head.webp" alt="">
+  <img class="hero__illustration hero__illustration--sketch" src="images/hero-sketch.webp" alt="">
+
+  <h1 class="hero__title" id="hero-title">
+    We’re a team of makers who specialize in building companies from the ground up and create everything in-house.
+  </h1>
+  </section>
+
+  <section class="areas" aria-labelledby="areas-title">
+    <h2 class="areas__title" id="areas-title">Areas of Work</h2>
+
+    <ul class="areas__list">
+      <li>Applied AI</li>
+      <li>Adaptive Interfaces</li>
+      <li>Digital Health</li>
+      <li>Education</li>
+      <li>Gaming</li>
+    </ul>
+  </section>
+
+  <section class="work-grid" id="work" aria-labelledby="work-title">
+    <h2 class="screen-reader-text" id="work-title">Featured Work</h2>
 
     <!-- 04 Work Grid will go here -->
+  </section>
 
-    <!-- 05 Team Statement will go here -->
+  <section class="team-statement" aria-labelledby="team-statement-title">
+    <h2 class="team-statement__title" id="team-statement-title">
+      Our founder-led teams include AI engineers, designers, growth experts, health practitioners, writers, and more, sharing knowledge and expertise across disciplines.
+    </h2>
+
+    <!-- Decorative team statement illustrations will be added later -->
+  </section>
+
+  <section class="team" id="team" aria-labelledby="team-title">
+    <h2 class="visually-hidden" id="team-title">Team</h2>
 
     <!-- 06 Team Cards will go here -->
+  </section>
+
+  <section class="credibility" aria-labelledby="credibility-title">
+    <h2 class="visually-hidden" id="credibility-title">Experience and Recognition</h2>
 
     <!-- 07 Credibility Copy will go here -->
-  </main>
+  </section>
+</main>
 
-  <footer class="site-footer">
-    <!-- 08 Footer will go here -->
-  </footer>
+<footer class="site-footer" id="contact">
+  <!-- 08 Footer will go here -->
+</footer>
 
-  <script src="scripts/main.js" defer></script>
+<script src="scripts/main.js" defer></script>
 </body>
 </html>
