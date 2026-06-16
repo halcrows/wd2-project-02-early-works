@@ -1,4 +1,17 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
 body {
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  @include flatten;
+  list-style: none;
 }

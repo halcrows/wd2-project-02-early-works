@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  max-width: 1650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px $padding-mobile 0;
+  font-family: $font-sans;
+  text-transform: uppercase;
+}
+
+.site-header__logo {
+  visibility: hidden;
+}
+
+.site-header__name {
+  @include flatten;
+
+  grid-column: 2;
+  font-size: 43px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.site-header__contact {
+  grid-column: 3;
+  justify-self: end;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip-ink: auto;
+}

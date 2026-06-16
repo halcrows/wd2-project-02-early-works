@@ -1,0 +1,12 @@
+@use "../utilities/variables" as *;
+
+body {
+  font-family: $font-sans;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.team-statement {
+  padding: $section-padding-large $padding-mobile;
+  text-align: center;
+}
+
+.team-statement__title {
+  @include flatten;
+  @include margin-center;
+
+  display: inline-block;
+  max-width: 1120px;
+  font-family: $font-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .team-statement__title {
+    font-size: 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-statement__title {
+    font-size: 102px;
+  }
+}
