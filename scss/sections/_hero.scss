@@ -65,7 +65,7 @@
 @include mq($desktop) {
   .hero {
     padding-top: 155px;
-    padding-bottom: 140px;
+    padding-bottom: 90px;
   }
 
   .hero__title {
@@ -81,6 +81,6 @@
   .hero__illustration--sketch {
     width: 610px;
     left: 19%;
-    bottom: -28px;
+    bottom: 20px;
   }
 }
