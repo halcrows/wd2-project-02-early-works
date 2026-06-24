@@ -3,9 +3,9 @@
 
 .hero {
   position: relative;
-  padding: 120px $padding-mobile 40px;
+  padding: 70px $padding-mobile 55px;
   text-align: center;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .hero__title {
@@ -15,9 +15,9 @@
   position: relative;
   z-index: 2;
   display: inline-block;
-  max-width: 1320px;
+  max-width: 260px;
   font-family: $font-serif;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: normal;
@@ -31,56 +31,71 @@
 }
 
 .hero__illustration--head {
-  width: 360px;
-  top: 20px;
-  right: 9%;
+  width: 190px;
+  top: 42px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
 }
 
 .hero__illustration--sketch {
-  width: 420px;
-  left: 17%;
-  bottom: -8px;
+  width: 220px;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
 }
 
-@media (min-width: 768px) {
+@include mq($tablet) {
   .hero {
-    padding-top: 130px;
+    padding-top: 125px;
+    padding-bottom: 80px;
+    overflow: visible;
   }
 
   .hero__title {
-    font-size: 72px;
+    max-width: 540px;
+    font-size: 38px;
   }
 
   .hero__illustration--head {
-    width: 420px;
-    right: 11%;
+    width: 220px;
+    top: 55px;
+    right: 5%;
+    left: auto;
+    transform: none;
   }
 
   .hero__illustration--sketch {
-    width: 500px;
-    left: 18%;
+    width: 260px;
+    left: 5%;
+    bottom: 70px;
+    transform: none;
   }
 }
 
-@media (min-width: 1200px) {
+@include mq($desktop) {
   .hero {
     padding-top: 155px;
-    padding-bottom: 140px;
+    padding-bottom: 90px;
   }
 
   .hero__title {
+    max-width: $page-width;
     font-size: 94px;
   }
 
   .hero__illustration--head {
     width: 520px;
     top: -10px;
-    right: 18%;
+    right: 17%;
+    left: auto;
+    transform: none;
   }
 
   .hero__illustration--sketch {
     width: 610px;
     left: 19%;
-    bottom: -28px;
+    bottom: 20px;
+    transform: none;
   }
 }

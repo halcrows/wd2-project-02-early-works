@@ -23,6 +23,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 0 14px;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: $font-serif;
   font-size: 23px;
   line-height: 25px;
@@ -61,4 +64,10 @@
 
 .areas__list li:nth-child(5)::after {
   background-color: $dot-green;
+}
+
+@include mq($tablet) {
+  .areas__list {
+    max-width: none;
+  }
 }

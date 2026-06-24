@@ -13,3 +13,9 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin mq($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
