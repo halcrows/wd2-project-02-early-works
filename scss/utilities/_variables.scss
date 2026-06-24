@@ -1,3 +1,9 @@
+@use "sass:math";
+
+@function em($px, $base: 16) {
+  @return math.div($px, $base) * 1em;
+}
+
 $black: #000;
 $white: #fff;
 $grey: #d8d8d8;
@@ -15,5 +21,9 @@ $font-sans: Arial, Helvetica, sans-serif;
 
 // Reusable spacing values based on the inspected reference layout.
 $padding-mobile: 24px;
-$page-width: 1320px;
+$page-width: em(1320);
+$header-width: em(1650);
 $section-padding-large: 144px;
+
+$tablet: em(768);
+$desktop: em(1200);

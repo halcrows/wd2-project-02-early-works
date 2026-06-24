@@ -15,7 +15,7 @@
   position: relative;
   z-index: 2;
   display: inline-block;
-  max-width: 1320px;
+  max-width: $page-width;
   font-family: $font-serif;
   font-size: 48px;
   font-weight: 300;
@@ -42,7 +42,7 @@
   bottom: -8px;
 }
 
-@media (min-width: 768px) {
+@include mq($tablet) {
   .hero {
     padding-top: 130px;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@include mq($desktop) {
   .hero {
     padding-top: 155px;
     padding-bottom: 140px;
