@@ -1,0 +1,101 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.hero {
+  position: relative;
+  padding: 70px $padding-mobile 55px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero__title {
+  @include flatten;
+  @include margin-center;
+
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  max-width: 260px;
+  font-family: $font-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.hero__illustration {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__illustration--head {
+  width: 190px;
+  top: 42px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+.hero__illustration--sketch {
+  width: 220px;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+}
+
+@include mq($tablet) {
+  .hero {
+    padding-top: 125px;
+    padding-bottom: 80px;
+    overflow: visible;
+  }
+
+  .hero__title {
+    max-width: 540px;
+    font-size: 38px;
+  }
+
+  .hero__illustration--head {
+    width: 220px;
+    top: 55px;
+    right: 5%;
+    left: auto;
+    transform: none;
+  }
+
+  .hero__illustration--sketch {
+    width: 260px;
+    left: 5%;
+    bottom: 70px;
+    transform: none;
+  }
+}
+
+@include mq($desktop) {
+  .hero {
+    padding-top: 155px;
+    padding-bottom: 90px;
+  }
+
+  .hero__title {
+    max-width: $page-width;
+    font-size: 94px;
+  }
+
+  .hero__illustration--head {
+    width: 520px;
+    top: -10px;
+    right: 17%;
+    left: auto;
+    transform: none;
+  }
+
+  .hero__illustration--sketch {
+    width: 610px;
+    left: 19%;
+    bottom: 20px;
+    transform: none;
+  }
+}

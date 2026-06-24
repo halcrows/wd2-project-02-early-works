@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Starter styles for the founder-led statement section.
+// Image placement still needs to be added to match the reference layout.
+
+.team-statement {
+  padding: 96px $padding-mobile;
+  text-align: center;
+}
+
+.team-statement__title {
+  @include flatten;
+  @include margin-center;
+
+  max-width: 280px;
+  font-family: $font-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: normal;
+}
+
+@include mq($tablet) {
+  .team-statement {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-statement__title {
+    max-width: 680px;
+    font-size: 48px;
+  }
+}
+
+@include mq($desktop) {
+  .team-statement {
+    padding-top: $section-padding-large;
+    padding-bottom: $section-padding-large;
+  }
+
+  .team-statement__title {
+    max-width: 1120px;
+    font-size: 76px;
+  }
+}
