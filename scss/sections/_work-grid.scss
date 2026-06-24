@@ -1,3 +1,27 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
 .work-grid {
-  min-height: 600px;
+  padding: 0 $padding-mobile 96px;
+}
+
+.work-grid__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include mq($desktop) {
+  .work-grid {
+    padding-bottom: 144px;
+  }
+
+  .work-grid__inner {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 44px;
+  }
 }
