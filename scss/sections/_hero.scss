@@ -44,21 +44,25 @@
 
 @include mq($tablet) {
   .hero {
-    padding-top: 130px;
+    padding-top: 125px;
+    padding-bottom: 80px;
   }
 
   .hero__title {
-    font-size: 72px;
+    max-width: 540px;
+    font-size: 38px;
   }
 
   .hero__illustration--head {
-    width: 420px;
-    right: 11%;
+    width: 220px;
+    top: 55px;
+    right: 5%;
   }
 
   .hero__illustration--sketch {
-    width: 500px;
-    left: 18%;
+    width: 260px;
+    left: 5%;
+    bottom: 70px;
   }
 }
 
