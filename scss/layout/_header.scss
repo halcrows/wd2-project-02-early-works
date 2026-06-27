@@ -46,10 +46,21 @@
     grid-column: 1;
   }
 
-  .site-header__name {
-    grid-column: 2;
-    font-size: 43px;
-  }
+.site-header__name {
+  @include flatten;
+  grid-column: 2;
+  display: inline-block;
+  font-size: em(28);
+  line-height: 1;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  transform-origin: center;
+}
+
+.site-header__name:hover {
+  transform: scaleY(-1);
+}
 
   .site-header__contact {
     display: block;
