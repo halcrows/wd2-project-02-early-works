@@ -6,6 +6,10 @@ body {
   color: $black;
 }
 
+body.is-dark {
+  background-color: $black;
+  color: $white;
+}
 a {
   color: inherit;
   text-decoration: none;
