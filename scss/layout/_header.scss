@@ -55,7 +55,13 @@ body.is-dark .site-header__theme-toggle {
 
   .site-header__name {
     grid-column: 2;
+    display: inline-block;
     font-size: 43px;
+    transform-origin: center;
+  }
+
+  .site-header__name:hover {
+    transform: scaleY(-1);
   }
 
   .site-header__contact {
