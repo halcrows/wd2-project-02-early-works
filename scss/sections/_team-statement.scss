@@ -5,42 +5,84 @@
 // Image placement still needs to be added to match the reference layout.
 
 .team-statement {
-  padding: 96px $padding-mobile;
-  text-align: center;
+  position: relative;
+  padding: em(96) $padding-mobile;
+  overflow: hidden;
 }
 
 .team-statement__title {
-  @include flatten;
-  @include margin-center;
-
-  max-width: 280px;
+  position: relative;
+  z-index: 1;
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
   font-family: $font-serif;
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: normal;
+  font-size: clamp(em(36), 12vw, em(56));
+  font-weight: 400;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.team-statement__illustration {
+  position: absolute;
+  pointer-events: none;
+}
+
+.team-statement__illustration--juggle {
+  width: clamp(em(120), 38vw, em(190));
+  top: em(20);
+  left: em(24);
+}
+
+.team-statement__illustration--goose {
+  width: clamp(em(100), 32vw, em(170));
+  right: em(24);
+  bottom: em(24);
 }
 
 @include mq($tablet) {
   .team-statement {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: em(128);
+    padding-bottom: em(128);
   }
 
   .team-statement__title {
-    max-width: 680px;
-    font-size: 48px;
+    font-size: clamp(em(48), 7vw, em(72));
+  }
+
+  .team-statement__illustration--juggle {
+    width: clamp(em(150), 24vw, em(240));
+    top: em(48);
+    left: 8%;
+  }
+
+  .team-statement__illustration--goose {
+    width: clamp(em(130), 20vw, em(220));
+    right: 8%;
+    bottom: em(40);
   }
 }
 
 @include mq($desktop) {
   .team-statement {
-    padding-top: $section-padding-large;
-    padding-bottom: $section-padding-large;
+    padding-top: em(144);
+    padding-bottom: em(144);
   }
 
   .team-statement__title {
-    max-width: 1120px;
-    font-size: 76px;
+    max-width: 22ch;
+    font-size: clamp(em(56), 5vw, em(88));
+  }
+
+  .team-statement__illustration--juggle {
+    width: clamp(em(180), 18vw, em(300));
+    top: em(80);
+    left: 6%;
+  }
+
+  .team-statement__illustration--goose {
+    width: clamp(em(160), 16vw, em(260));
+    right: 7%;
+    bottom: em(32);
   }
 }

@@ -75,27 +75,27 @@
 
 @include mq($desktop) {
   .hero {
-    padding-top: 155px;
-    padding-bottom: 90px;
+    padding-top: em(155);
+    padding-bottom: em(90);
   }
 
   .hero__title {
-    max-width: $page-width;
-    font-size: 94px;
+    max-width: 23ch;
+    font-size: clamp(em(64), 4vw, em(86));
   }
 
   .hero__illustration--head {
-    width: 520px;
-    top: -10px;
+    width: clamp(em(260), 20vw, em(520));
+    top: em(-10);
     right: 17%;
     left: auto;
     transform: none;
   }
 
   .hero__illustration--sketch {
-    width: 610px;
+    width: clamp(em(300), 24vw, em(610));
     left: 19%;
-    bottom: 20px;
+    bottom: em(20);
     transform: none;
   }
 }
