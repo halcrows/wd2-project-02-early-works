@@ -11,7 +11,12 @@
 <body>
 
 <header class="site-header">
-  <a class="site-header__logo" href="index.html" aria-label="Early Works home"></a>
+  <button
+  class="site-header__theme-toggle"
+  type="button"
+  aria-label="Switch to dark mode"
+  aria-pressed="false"
+></button>
 
   <p class="site-header__name">Early Works</p>
 
@@ -20,8 +25,20 @@
 
 <main>
   <section class="hero" aria-labelledby="hero-title">
-    <img class="hero__illustration hero__illustration--head" src="images/hero-head.webp" alt="">
-    <img class="hero__illustration hero__illustration--sketch" src="images/hero-sketch.webp" alt="">
+    <img
+      class="hero__illustration hero__illustration--head"
+      src="images/hero-head.webp"
+      data-light-src="images/hero-head.webp"
+      data-dark-src="images/hero-head_dark.webp"
+      alt=""
+    >
+    <img
+      class="hero__illustration hero__illustration--sketch"
+      src="images/hero-sketch.webp"
+      data-light-src="images/hero-sketch.webp"
+      data-dark-src="images/hero-sketch-dark.webp"
+      alt=""
+    >
 
     <h1 class="hero__title" id="hero-title">
       We're a team of makers who specialize in building companies from the ground up and create everything in-house.
@@ -194,13 +211,16 @@
       <img
         class="team-statement__illustration team-statement__illustration--juggle"
         src="images/juggle.webp"
+        data-light-src="images/juggle.webp"
+        data-dark-src="images/juggle-dark.webp"
         alt=""
         aria-hidden="true"
       >
-
       <img
         class="team-statement__illustration team-statement__illustration--goose"
         src="images/goose.webp"
+        data-light-src="images/goose.webp"
+        data-dark-src="images/goose-dark.webp"
         alt=""
         aria-hidden="true"
       >
