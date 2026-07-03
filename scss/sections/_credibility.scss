@@ -1,0 +1,42 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.credibility {
+  padding: em(96) $padding-mobile;
+}
+
+.credibility .paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: em(24);
+  max-width: 31ch;
+  margin: 0 auto;
+  font-family: $font-serif;
+  font-size: clamp(em(32), 5vw, em(64));
+  font-weight: 400;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.credibility .paragraphs p {
+  margin: 0;
+}
+
+@include mq($tablet) {
+  .credibility {
+    padding-top: em(128);
+    padding-bottom: em(128);
+  }
+}
+
+@include mq($desktop) {
+  .credibility {
+    padding-top: em(144);
+    padding-bottom: em(144);
+  }
+
+  .credibility .paragraphs {
+    font-size: clamp(em(48), 5vw, em(80));
+  }
+}

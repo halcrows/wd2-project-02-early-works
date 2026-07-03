@@ -12,11 +12,11 @@
 
 <header class="site-header">
   <button
-  class="site-header__theme-toggle"
-  type="button"
-  aria-label="Switch to dark mode"
-  aria-pressed="false"
-></button>
+          class="site-header__theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+  ></button>
 
   <p class="site-header__name">Early Works</p>
 
@@ -26,18 +26,18 @@
 <main>
   <section class="hero" aria-labelledby="hero-title">
     <img
-      class="hero__illustration hero__illustration--head"
-      src="images/hero-head.webp"
-      data-light-src="images/hero-head.webp"
-      data-dark-src="images/hero-head_dark.webp"
-      alt=""
+            class="hero__illustration hero__illustration--head"
+            src="images/hero-head.webp"
+            data-light-src="images/hero-head.webp"
+            data-dark-src="images/hero-head_dark.webp"
+            alt=""
     >
     <img
-      class="hero__illustration hero__illustration--sketch"
-      src="images/hero-sketch.webp"
-      data-light-src="images/hero-sketch.webp"
-      data-dark-src="images/hero-sketch-dark.webp"
-      alt=""
+            class="hero__illustration hero__illustration--sketch"
+            src="images/hero-sketch.webp"
+            data-light-src="images/hero-sketch.webp"
+            data-dark-src="images/hero-sketch-dark.webp"
+            alt=""
     >
 
     <h1 class="hero__title" id="hero-title">
@@ -208,39 +208,103 @@
       Our founder-led teams include AI engineers, designers, growth experts, health practitioners, writers, and more, sharing knowledge and expertise across disciplines.
     </h2>
 
-      <img
-        class="team-statement__illustration team-statement__illustration--juggle"
-        src="images/juggle.webp"
-        data-light-src="images/juggle.webp"
-        data-dark-src="images/juggle-dark.webp"
-        alt=""
-        aria-hidden="true"
-      >
-      <img
-        class="team-statement__illustration team-statement__illustration--goose"
-        src="images/goose.webp"
-        data-light-src="images/goose.webp"
-        data-dark-src="images/goose-dark.webp"
-        alt=""
-        aria-hidden="true"
-      >
+    <img
+            class="team-statement__illustration team-statement__illustration--juggle"
+            src="images/juggle.webp"
+            data-light-src="images/juggle.webp"
+            data-dark-src="images/juggle-dark.webp"
+            alt=""
+            aria-hidden="true"
+    >
+    <img
+            class="team-statement__illustration team-statement__illustration--goose"
+            src="images/goose.webp"
+            data-light-src="images/goose.webp"
+            data-dark-src="images/goose-dark.webp"
+            alt=""
+            aria-hidden="true"
+    >
   </section>
 
   <section class="team" id="team" aria-labelledby="team-title">
     <h2 class="screen-reader-text" id="team-title">Team</h2>
-
-    <!-- 06 Team Cards will go here -->
+    <div class="flex-container">
+      <div class="flex-children">
+        <img src="images/z_chris_sleat.png" alt="Chris Sleat project preview">
+        <p>CHRIS SLEAT</p>
+        <p>Founder, Head of Product</p>
+      </div>
+      <div class="flex-children">
+        <img src="images/z_irele_alvarado.png" alt="Irele Alvarado project preview">
+        <p>IRENE ALVARADO</p>
+        <p>Founder, Head of Engineering</p>
+      </div>
+      <div class="flex-children">
+        <img src="images/z_isaac_blankensmith.png" alt="Isaac Blankensmith project preview">
+        <p>ISAAC BLANKENSMITH</p>
+        <p>Founder, Head of Design</p>
+      </div>
+      <div class="flex-children">
+        <img src="images/z_jennifer_klepper.png" alt="Jennifer Klepper project preview">
+        <p>JENNIFER KLEPPER</p>
+        <p>Founder, Head of Operations</p>
+      </div>
+    </div>
   </section>
 
   <section class="credibility" aria-labelledby="credibility-title">
     <h2 class="screen-reader-text" id="credibility-title">Experience and Recognition</h2>
-
-    <!-- 07 Credibility Copy will go here -->
+    <div class="paragraphs">
+      <p>We are industry leaders with a wealth of experience building consumer and enterprise productss for millions of people at startups as well as Fortune 500 companies. Collectively, we've had multiple successful exits and managed dozens of M&A deals.</p>
+      <p>Our work has been recognized by <b>The New Yorker, The Verge, The New York Times,</b> and <b>Wired,</b> as well as awards from the Webbys, Cannes Lion, One Show, and Fast Company's World Changing Ideas.</p>
+    </div>
   </section>
 </main>
 
 <footer class="site-footer" id="contact">
-  <!-- 08 Footer will go here -->
+  <hr class="site-footer__rule">
+
+  <div class="footer-container">
+    <div class="footer-clocks">
+      <div class="footer-clock">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 5.5v6.5l4.5 3"></path>
+        </svg>
+        <p>NY<br>00 20</p>
+      </div>
+
+      <div class="footer-clock">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M6 10l6 2 5 3"></path>
+        </svg>
+        <p>CA<br>21 20</p>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="site-footer__column">
+        <p>INQUIRIES</p>
+        <a href="mailto:hello@early.works">hello@early.works</a>
+      </div>
+
+      <div class="site-footer__column">
+        <p>CAREERS</p>
+        <a href="mailto:jobs@early.works">jobs@early.works</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="site-footer__icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <p class="site-footer__copyright">EARLY WORKS © 2026</p>
+    </div>
+  </div>
 </footer>
 
 <script src="scripts/main.js" defer></script>
